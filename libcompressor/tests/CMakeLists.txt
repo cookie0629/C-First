@@ -1,3 +1,5 @@
+find_package(GTest REQUIRED)
+
 add_executable(libcompressortest libcompressortest.cpp)
 target_link_libraries(libcompressortest
     libcompressor

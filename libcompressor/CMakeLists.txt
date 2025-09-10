@@ -9,7 +9,7 @@ target_include_directories(libcompressor PUBLIC
 target_link_libraries(libcompressor
     CONAN_PKG::zlib
     CONAN_PKG::bzip2
-)
+
 
 install(TARGETS libcompressor
         LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}

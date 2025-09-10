@@ -13,8 +13,8 @@
  * @brief Compression algorithm types.
  */
 enum libcompressor_CompressionAlgorithm {
-    libcompressor_Zlib,  ///< Zlib compression
-    libcompressor_Bzip   ///< Bzip2 compression
+  libcompressor_Zlib,  ///< Zlib compression
+  libcompressor_Bzip   ///< Bzip2 compression
 };
 
 /**
@@ -22,8 +22,8 @@ enum libcompressor_CompressionAlgorithm {
  * @brief Buffer structure for input and output data.
  */
 struct libcompressor_Buffer {
-    char* data; ///< Pointer to the data
-    int size;   ///< Size of the data in bytes
+  char* data;  ///< Pointer to the data
+  int size;    ///< Size of the data in bytes
 };
 
 /**
@@ -34,4 +34,4 @@ struct libcompressor_Buffer {
  */
 libcompressor_Buffer libcompressor_compress(libcompressor_CompressionAlgorithm algo, libcompressor_Buffer input);
 
-#endif // LIBCOMPRESSOR_HPP
+#endif  // LIBCOMPRESSOR_HPP
