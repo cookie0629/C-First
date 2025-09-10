@@ -15,7 +15,11 @@ endif()
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 # 包含Conan生成的工具链
-include(${CMAKE_BINARY_DIR}/conan_toolchain.cmake)
+if(EXISTS ${CMAKE_BINARY_DIR}/conan_toolchain.cmake)
+  include(${CMAKE_BINARY_DIR}/conan_toolchain.cmake)
+else()
+  message(WARNING "conan_toolchain.cmake not found. Please run 'conan install' first.")
+endif()
 
 # 添加子目录
 add_subdirectory(libcompressor)

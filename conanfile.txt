@@ -1,0 +1,9 @@
+[requires]
+zlib/1.2.11
+bzip2/1.0.8
+gtest/1.14.0
+spdlog/1.14.1
+
+[generators]
+CMakeDeps
+CMakeToolchain
